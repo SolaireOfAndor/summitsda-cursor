@@ -64,3 +64,54 @@ document.getElementById('newsletter-form').addEventListener('submit', function(e
     console.log('Newsletter form submitted');
     this.reset();
 });
+
+// Wrap FAB functionality in a function
+function initFAB() {
+    const fabButton = document.querySelector('.fab-button');
+    const fabOptions = document.querySelector('.fab-options');
+
+    if (fabButton && fabOptions) {
+        fabButton.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent event from bubbling up
+            fabOptions.classList.toggle('show');
+        });
+
+        // Close FAB options when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!fabButton.contains(e.target) && !fabOptions.contains(e.target)) {
+                fabOptions.classList.remove('show');
+            }
+        });
+
+        // Smooth scroll for FAB options
+        document.querySelectorAll('.fab-options a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                fabOptions.classList.remove('show');
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    }
+}
+
+// Add this function to handle header scroll effect
+function handleHeaderScroll() {
+    const header = document.querySelector('header');
+    const scrollTrigger = 100; // Adjust this value to change when the header becomes semi-transparent
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > scrollTrigger) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+}
+
+// Call the function after the DOM has loaded
+document.addEventListener('DOMContentLoaded', () => {
+    initFAB();
+    handleHeaderScroll();
+});
