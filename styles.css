@@ -90,7 +90,7 @@ nav ul li a:hover {
     align-items: center;
     text-align: center;
     padding: 0 20px;
-    background-image: url('../background-test.jpg'); /* Updated path */
+    background-image: url('background-test.jpg'); /* Updated path */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -213,11 +213,11 @@ section {
 }
 
 #invest {
-    background-image: url('../invest.jpg');
+    background-image: url('invest.jpg');
 }
 
 #learn {
-    background-image: url('../learn.jpg');
+    background-image: url('learn.jpg');
 }
 
 form {
