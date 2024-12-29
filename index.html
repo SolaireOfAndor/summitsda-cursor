@@ -1,133 +1,446 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SummitSDA - NDIS Services & SDA Investment</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-</head>
+
+<html class="noIE" lang="en-US">
+
+	<head>
+		<!-- meta -->
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
+		<title>SummitSDA</title>
+
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/ionicons.min.css">
+		<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+	    <link rel="stylesheet" href="assets/css/main.css">
+
+	</head>
+
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="logo.png" alt="SummitSDA Logo">
-                <span>SummitSDA</span>
-            </div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#invest">Invest</a></li>
-                <li><a href="#learn">Learn</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1>Empowering Lives, Elevating Investments</h1>
-                <p>SummitSDA provides premium NDIS services and SDA investment opportunities.</p>
-                <a href="#contact" class="cta-button">Get in Touch</a>
-            </div>
-        </section>
+<!-- Home -->
+	<section class="header" id="header">
+		
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-50 fixed-top py-2"">
+			<div class="container">
+				<a class="navbar-brand" href="index.html"> <img src="assets/images/logo.png" alt="Logo" style="height: 40px;"
+					>SummitSDA
+				</a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto">
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  Services
+					</a>
+					<ul class="dropdown-menu navbar-dark bg-dark bg-opacity-50 py-3">
+					  <li><a class="dropdown-item" href="investors.html">For Investors</a></li>
+					  <li><a class="dropdown-item" href="participants.html">For Participants</a></li>
+					  <li><a class="dropdown-item" href="providers.html">For Providers</a></li>
+					</ul>
+				  </li>
+				  <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+				  <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+				  <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+				</ul>
+			  </div>
+			</div>
+		  </nav>
+		<div class="container">
+			<div class="header-table">
+				<div class="header-wrapper">
+					<h1 class="header-title">
+						let us get you to the SUMMIT
+					</h1>
+					<p class="header-subtitle">
+						since 2013
+					</p>
+				</div> <!-- /.header-wrapper -->
+			</div>
+		</div> <!-- /.container -->
+	</section> <!-- /#header -->
+	
 
-        <section id="services">
-            <h2>Our Services</h2>
-            <div class="service-grid">
-                <div class="service-item">
-                    <i class="fas fa-home fa-3x"></i>
-                    <h3>Supported Independent Living (SIL)</h3>
-                    <p>Personalized care and support for independent living.</p>
+<!-- Our Services -->
+<section id="service" class="service bg-light py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title mb-3">Our Services</h2>
+            <p class="section-item-detail">We offer real estate solutions and opportunities for all aspects of the NDIS industry.</p>
+        </div>
+        <div class="row">
+            <!-- Service 1 -->
+            <div class="service-block mb-5 p-4 bg-white rounded shadow">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="service-img position-relative overflow-hidden">
+                            <img src="assets/images/for-investors.webp" class="img-fluid" alt="for investors">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="section-item-title">For Investors</h3>
+                        <p>Secure, high return on investment opportunities in the highly demanded NDIS real estate development industry.</p>
+                        <ul class="list-unstyled">
+                            <li><strong>200% plus ROI compared to other options</strong></li>
+                            <li><strong>Extremely high market demand</strong></li>
+                            <li><strong>Fully government supported and incentivized</strong></li>
+                        </ul>
+                        <a href="investors.html" class="btn btn-outline-primary mt-3">
+                            Learn More <i class="ms-2 ion-ios-arrow-forward"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="service-item">
-                    <i class="fas fa-building fa-3x"></i>
-                    <h3>Specialist Disability Accommodation (SDA)</h3>
-                    <p>High-quality housing solutions for people with disabilities.</p>
+            </div>
+            <!-- Service 2 -->
+            <div class="service-block mb-5 p-4 bg-white rounded shadow">
+                <div class="row align-items-center flex-md-row-reverse">
+                    <div class="col-md-6">
+                        <div class="service-img position-relative overflow-hidden">
+                            <img src="assets/images/for-providers.jpg" class="img-fluid" alt="for providers">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="section-item-title">For Providers</h3>
+                        <p>Specilised housing development based on your exact needs.</p>
+                        <ul class="list-unstyled">
+                            <li><strong>Fully handled by our team</strong></li>
+                            <li><strong>Best value proposition</strong></li>
+                            <li><strong>Versatility of service</strong></li>
+                        </ul>
+                        <a href="providers.html" class="btn btn-outline-primary mt-3">
+                            Learn More <i class="ms-2 ion-ios-arrow-forward"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="service-item">
-                    <i class="fas fa-hands-helping fa-3x"></i>
-                    <h3>Disability Care</h3>
-                    <p>Comprehensive care services tailored to individual needs.</p>
+            </div>
+            <!-- Service 3 -->
+            <div class="service-block mb-5 p-4 bg-white rounded shadow">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="service-img position-relative overflow-hidden">
+                            <img src="assets/images/for-participants.webp" class="img-fluid" alt="Money Back Guarantee">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="section-item-title">For Participants</h3>
+                        <p>Join our SIL plan and find your home.</p>
+                        <ul class="list-unstyled">
+                            <li><strong>Years of experience in providing top quality care</strong></li>
+                            <li><strong>Flexible options to suit all your needs</strong></li>
+                            <li><strong>Location available all around australia.</strong></li>
+                        </ul>
+                        <a href="participants.html" class="btn btn-outline-primary mt-3">
+                            Learn More <i class="ms-2 ion-ios-arrow-forward"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="service-item">
-                    <i class="fas fa-chart-line fa-3x"></i>
-                    <h3>SDA Real Estate Investment</h3>
-                    <p>Lucrative investment opportunities in the SDA sector.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="invest" class="with-image">
-            <div class="section-content">
-                <h2>Invest in SDA</h2>
-                <p>Discover high-return investment opportunities in Specialist Disability Accommodation.</p>
-                <a href="#contact" class="cta-button">Learn More</a>
-            </div>
-        </section>
-
-        <section id="learn" class="with-image">
-            <div class="section-content">
-                <h2>Learn About NDIS</h2>
-                <p>Understand the National Disability Insurance Scheme and how it benefits participants and investors.</p>
-                <a href="#" class="cta-button">Explore Resources</a>
-            </div>
-        </section>
-
-        <section id="about">
-            <h2>About SummitSDA</h2>
-            <p>We are committed to providing exceptional NDIS services and investment opportunities, improving lives and delivering value to our stakeholders.</p>
-        </section>
-
-        <section id="contact">
-            <h2>Get in Touch</h2>
-            <form id="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <input type="tel" name="phone" placeholder="Your Phone (optional)">
-                <textarea name="message" placeholder="Your Message (optional)"></textarea>
-                <button type="submit" class="cta-button">Send Message</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <div class="logo">SummitSDA</div>
-            <div class="newsletter">
-                <h3>Subscribe to Our Newsletter</h3>
-                <form id="newsletter-form">
-                    <input type="email" name="newsletter-email" placeholder="Your Email" required>
-                    <button type="submit" class="cta-button">Subscribe</button>
-                </form>
-            </div>
-            <div class="social-links">
-                <!-- Add social media icons/links here -->
             </div>
         </div>
-        <div class="copyright">
-            &copy; 2023 SummitSDA. All rights reserved.
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-    <!-- Add this just before the closing </body> tag -->
-    <div class="fab-container">
-      <button class="fab-button">
-        <i class="fas fa-bars"></i>
-      </button>
-      <ul class="fab-options">
-        <li><a href="#home"><i class="fas fa-home"></i></a></li>
-        <li><a href="#services"><i class="fas fa-concierge-bell"></i></a></li>
-        <li><a href="#invest"><i class="fas fa-chart-line"></i></a></li>
-        <li><a href="#learn"><i class="fas fa-book"></i></a></li>
-        <li><a href="#about"><i class="fas fa-info-circle"></i></a></li>
-        <li><a href="#contact"><i class="fas fa-envelope"></i></a></li>
-      </ul>
     </div>
+</section>
+
+
+
+ <!-- /.service -->
+
+	
+<!-- Twitter Feed -->
+	<section class="twitter-feed green">
+		<div class="container section-wrapper">
+			<div class="section-title">
+				placeholder
+			</div> <!-- /.section-title -->
+			<div class="underline white"></div>
+			<div class="owl-carousel twitter-owl">
+				<div class="item">
+					<p class="day">12 days ago</p>
+					<p class="feed">
+						We are glad to introduce our first HTML5/CSS3 Template called “PATROS” -http://t.co/mL9rufE7h8 @designscrazed @W3layouts @freshdesignweb
+					</p>
+					<div class="options">
+						<a href="#"><span><i class="ion-reply"></i> replay</span></a>
+						<a href="#"><span><i class="ion-social-twitter"></i> retweet</span></a>
+						<a href="#"><span><i class="ion-heart"></i> favorite</span></a>
+					</div>
+				</div> <!-- /.item -->
+				<div class="item">
+					<p class="day">12 days ago</p>
+					<p class="feed">
+						We are glad to introduce our first HTML5/CSS3 Template called “PATROS” -http://t.co/mL9rufE7h8 @designscrazed @W3layouts @freshdesignweb
+					</p>
+					<div class="options">
+						<a href="#"><span><i class="ion-reply"></i> replay</span></a>
+						<a href="#"><span><i class="ion-social-twitter"></i> retweet</span></a>
+						<a href="#"><span><i class="ion-heart"></i> favorite</span></a>
+					</div>
+				</div> <!-- /.item -->
+				<div class="item">
+					<p class="day">20 days ago</p>
+					<p class="feed">
+						We are glad to introduce our first HTML5/CSS3 Template called “PATROS” -http://t.co/mL9rufE7h8 @designscrazed @W3layouts @freshdesignweb
+					</p>
+					<div class="options">
+						<a href="#"><span><i class="ion-reply"></i> replay</span></a>
+						<a href="#"><span><i class="ion-social-twitter"></i> retweet</span></a>
+						<a href="#"><span><i class="ion-heart"></i> favorite</span></a>
+					</div>
+				</div> <!-- /.item -->
+				<div class="item">
+					<p class="day">5 days ago</p>
+					<p class="feed">
+						We are glad to introduce our first HTML5/CSS3 Template called “PATROS” -http://t.co/mL9rufE7h8 @designscrazed @W3layouts @freshdesignweb
+					</p>
+					<div class="options">
+						<a href="#"><span><i class="ion-reply"></i> replay</span></a>
+						<a href="#"><span><i class="ion-social-twitter"></i> retweet</span></a>
+						<a href="#"><span><i class="ion-heart"></i> favorite</span></a>
+					</div>
+				</div> <!-- /.item -->
+			</div> <!-- /.owl-carousel -->
+		</div> <!-- /.container -->
+	</section> <!-- /.twitter-feed -->
+
+
+<!-- Portfolio -->
+	<section class="portfolio" id="portfolio">
+		<div class="container section-wrapper">
+			<h2 class="section-title black">
+				portfolio
+			</h2> <!-- /.section-title -->
+			<div class="underline purple"></div>
+			<div class="row">
+				<div class="col-sm-4 col-xs-6">
+					<div class="portfolio-item">
+						<div class="portfolio-img">
+							<img src="assets/images/port-1.png" alt="port-1" class="port-item">
+							<div class="portfolio-img-hover">
+								<a href="#"><img src="assets/images/plus.png" alt="plus" class="plus"></a>
+							</div> <!-- /.portfolio-img-hover -->
+						</div> <!-- /.portfolio-img -->
+						<div class="portfolio-item-details">
+							<div class="portfolio-item-name">
+								Olivera Note <br><small>Fashion</small>
+							</div> <!-- /.portfolio-item-name -->
+							<div class="port-heart">
+								<i class="ion-ios-heart-outline"></i> 564
+							</div> <!-- /.port-heart -->
+						</div> <!-- /.portfolio-item-details -->
+					</div> <!-- /.portfolio-item -->
+				</div> <!-- /.col-md-4 -->
+				<div class="col-sm-4 col-xs-6">
+					<div class="portfolio-item">
+						<div class="portfolio-img">
+							<img src="assets/images/port-2.png" alt="port-2" class="port-item">
+							<div class="portfolio-img-hover">
+								<a href="#"><img src="assets/images/plus.png" alt="plus" class="plus"></a>
+							</div> <!-- /.portfolio-img-hover -->
+						</div> <!-- /.portfolio-img -->
+						<div class="portfolio-item-details">
+							<div class="portfolio-item-name">
+								Shift Magazine <br><small>Photography</small>
+							</div> <!-- /.portfolio-item-name -->
+							<div class="port-heart">
+								<i class="ion-ios-heart-outline"></i> 564
+							</div> <!-- /.port-heart -->
+						</div> <!-- /.portfolio-item-details -->
+					</div> <!-- /.portfolio-item -->
+				</div> <!-- /.col-md-4 -->
+				<div class="col-sm-4 col-xs-6">
+					<div class="portfolio-item">
+						<div class="portfolio-img">
+							<img src="assets/images/port-3.png" alt="port-3" class="port-item">
+							<div class="portfolio-img-hover">
+								<a href="#"><img src="assets/images/plus.png" alt="plus" class="plus"></a>
+							</div> <!-- /.portfolio-img-hover -->
+						</div> <!-- /.portfolio-img -->
+						<div class="portfolio-item-details">
+							<div class="portfolio-item-name">
+								Camp Pine Tree <br><small>Web Design</small>
+							</div> <!-- /.portfolio-item-name -->
+							<div class="port-heart">
+								<i class="ion-ios-heart-outline"></i> 564
+							</div> <!-- /.port-heart -->
+						</div> <!-- /.portfolio-item-details -->
+					</div> <!-- /.portfolio-item -->
+				</div> <!-- /.col-md-4 -->
+				<div class="col-sm-4 col-xs-6">
+					<div class="portfolio-item">
+						<div class="portfolio-img">
+							<img src="assets/images/port-4.png" alt="port-4" class="port-item">
+							<div class="portfolio-img-hover">
+								<a href="#"><img src="assets/images/plus.png" alt="plus" class="plus"></a>
+							</div> <!-- /.portfolio-img-hover -->
+						</div> <!-- /.portfolio-img -->
+						<div class="portfolio-item-details">
+							<div class="portfolio-item-name">
+								Freeart App Design <br><small>Photography</small>
+							</div> <!-- /.portfolio-item-name -->
+							<div class="port-heart">
+								<i class="ion-ios-heart-outline"></i> 564
+							</div> <!-- /.port-heart -->
+						</div> <!-- /.portfolio-item-details -->
+					</div> <!-- /.portfolio-item -->
+				</div> <!-- /.col-md-4 -->
+				<div class="col-sm-4 col-xs-6">
+					<div class="portfolio-item">
+						<div class="portfolio-img">
+							<img src="assets/images/port-5.png" alt="port-5" class="port-item">
+							<div class="portfolio-img-hover">
+								<a href="#"><img src="assets/images/plus.png" alt="plus" class="plus"></a>
+							</div> <!-- /.portfolio-img-hover -->
+						</div> <!-- /.portfolio-img -->
+						<div class="portfolio-item-details">
+							<div class="portfolio-item-name">
+								Large Poster Set <br><small>Marketing</small>
+							</div> <!-- /.portfolio-item-name -->
+							<div class="port-heart">
+								<i class="ion-ios-heart-outline"></i> 564
+							</div> <!-- /.port-heart -->
+						</div> <!-- /.portfolio-item-details -->
+					</div> <!-- /.portfolio-item -->
+				</div> <!-- /.col-md-4 -->
+				<div class="col-sm-4 col-xs-6">
+					<div class="portfolio-item">
+						<div class="portfolio-img">
+							<img src="assets/images/port-6.png" alt="port-6" class="port-item">
+							<div class="portfolio-img-hover">
+								<a href="#"><img src="assets/images/plus.png" alt="plus" class="plus"></a>
+							</div> <!-- /.portfolio-img-hover -->
+						</div> <!-- /.portfolio-img -->
+						<div class="portfolio-item-details">
+							<div class="portfolio-item-name">
+								Skilet Album Cover <br><small>Business</small>
+							</div> <!-- /.portfolio-item-name -->
+							<div class="port-heart">
+								<i class="ion-ios-heart-outline"></i> 564
+							</div> <!-- /.port-heart -->
+						</div> <!-- /.portfolio-item-details -->
+					</div> <!-- /.portfolio-item -->
+				</div> <!-- /.col-md-4 -->
+			</div> <!-- /.row -->
+		</div> <!-- /.container -->
+	</section> <!-- /.portfolio -->
+
+
+<!-- Note -->
+	<section class="note green">
+		<div class="container section-wrapper text-center">
+			<p class="quote">
+				“When you’re a carpenter making a beautiful chest of drawers, you’re not going to use a piece of plywood on the back, even though it faces the wall and nobody will see it. You’ll know it’s there, so you’re going to use a beautiful piece of wood on the back. For you to sleep well at night, the aesthetic, the quality, has to be carried all the way through.”
+			</p> <!-- /.quote -->
+			<div class="quoter">Steve Jobs</div>
+		</div> <!-- /.container -->
+	</section> <!-- /.note -->
+
+
+<!-- Fan Facts -->
+	<section class="fun">
+		<div class="container section-wrapper">
+		<h2 class="section-title black">
+				Fun Facts
+			</h2> <!-- /.section-title -->
+			<div class="underline purple"></div>	
+			<div class="row">
+				<div class="col-sm-3 col-xs-6">
+					<div class="fun-box">
+						<div class="number">
+							1956628
+						</div>
+						<div class="number-title">
+							lines of code
+						</div>
+					</div> <!-- /.fun-box -->
+				</div> <!-- /.col-md-3 -->
+				<div class="col-sm-3 col-xs-6">
+					<div class="fun-box">
+						<div class="number">
+							1473
+						</div>
+						<div class="number-title">
+							cups of coffee
+						</div>
+					</div> <!-- /.fun-box -->
+				</div> <!-- /.col-md-3 -->
+				<div class="col-sm-3 col-xs-6">
+					<div class="fun-box">
+						<div class="number">
+							500
+						</div>
+						<div class="number-title">
+							projects delivered
+						</div>
+					</div> <!-- /.fun-box -->
+				</div> <!-- /.col-md-3 -->
+				<div class="col-sm-3 col-xs-6">
+					<div class="fun-box">
+						<div class="number">
+							101
+						</div>
+						<div class="number-title">
+							satisfied clients
+						</div>
+					</div> <!-- /.fun-box -->
+				</div> <!-- /.col-md-3 -->
+			</div> <!-- /.row -->
+		</div> <!-- /.container -->
+	</section> <!-- /.fun -->
+
+
+<!-- Footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="copy">
+						Copyright &copy; 2015 Your Company
+					</div>
+				</div>
+				<div class="col-sm-4 text-center">
+					<div class="social-icon">
+						<a href="#">
+							<div class="icon fb">
+								<i class="ion-social-facebook"></i>
+							</div>
+						</a>
+						<a href="#">
+							<div class="icon twitter">
+								<i class="ion-social-twitter"></i>
+							</div>
+						</a>
+						<a href="#">
+							<div class="icon google">
+								<i class="ion-social-googleplus"></i>
+							</div>
+						</a>
+						<a href="#">
+							<div class="icon rss">
+								<i class="ion-social-rss"></i>
+							</div>
+						</a>
+					</div>		
+				</div>
+				<div class="col-sm-4 text-right">
+					<div class="copy">
+						Theme by <a href="http://www.themewagon.com">themewagon.com</a>. All Rights Reserved
+					</div>
+				</div>
+			</div> <!-- /.row -->
+		</div> <!-- /.container -->
+	</footer>
+	
+
+
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/contact.js"></script>
+	<!-- // <script src="assets/js/smoothscroll.js"></script> -->
+	<script src="assets/js/script.js"></script>
+
+
 </body>
 </html>
