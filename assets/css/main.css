@@ -58,7 +58,7 @@ body
 ==================================================*/
 .header
 {
-	background: url('../images/bg1.jpg');
+	background: url('../images/bg3.webp');
 	background-repeat: no-repeat;	
 	background-position: center center;
 	background-size: cover;
@@ -66,85 +66,8 @@ body
 	height: 100vh;
 	color: #070404;
 	text-transform: uppercase;
-	
+	position: relative;
 }
-			/*navbar*/
-.navbar-default .navbar-brand{
-	border: 1px solid #fff;
-	color: #fff;
-	font-size: 30px;
-	padding: 10px 20px;
-	height: auto;
-	font-weight: 200;
-	letter-spacing: 5px;
-}
-.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover{
-	color: #fff;
-}
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #FFF;
-}
-
-.navbar-default {
-    background-color: transparent;
-    border-color: transparent;
-    padding-top: 50px;
-}
-.navbar-default .navbar-nav>li>a{
-	color: #fff;
-    /*text-transform: uppercase;*/
-    padding-right: 20px;
-    padding-left: 20px;
-    border: 1px solid transparent;
-    font-size: 12px;
-    font-weight: 300;
-    letter-spacing: 1px;
-}
-.navbar-default .navbar-toggle{
-	border-radius: 0px;
-}
-.navbar-default .navbar-nav>li>a:hover{
-	border: 1px solid rgba(255, 255, 255, 0.6);
-	color: #fff;
-}
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
-	color: #fff;
-}
-.navbar-nav>li>a {
-    padding-top: 8px;
-    padding-bottom: 8px;
-}
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
-	background: transparent;
-}
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
-    background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    color: #fff;
-}
-
-.navbar-nav .nav-item {
-    margin-right: 50px; /* Adds space between links */
-}
-
-/* Custom styles for the dropdown menu */
-.navbar-nav .dropdown-menu {
-    background-color: #f8f9fa; /* Match the navbar background */
-    border: 1px solid rgba(0, 0, 0, 0.15); /* Add a subtle border */
-    border-radius: 5px; /* Remove border radius for a sharper look */
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Add shadow for depth */
-}
-
-.navbar-nav .dropdown-item {
-    color: #f9f3f3; /* Text color for dropdown items */
-    padding: 0.5rem 1rem; /* Padding for dropdown items */
-}
-
-.navbar-nav .dropdown-item:hover {
-    background-color: #a4adad; /* Background color on hover */
-    color: #212529; /* Text color on hover */
-}
-		/*Home*/
 .header-wrapper{
 	text-align: center;
 	display: table-cell;
@@ -167,18 +90,51 @@ body
 	letter-spacing: 3px;
 	color: #ffffff;
 }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    pointer-events: none;
+}
+
+
+
+
+/*=================================================
+||				 navbar
+==================================================*/
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFF;
+}
+.navbar-nav .nav-item {
+    margin-right: 30px; /* Adds space between links */
+}
+/* Custom styles for the dropdown menu */
+.navbar-nav .dropdown-item {
+    color: #f9f3f3; /* Text color for dropdown items */
+    padding: 0.5rem 1rem; /* Padding for dropdown items */
+}
+
+.navbar-nav .dropdown-item:hover {
+    background-color: #a4adad; /* Background color on hover */
+    color: #212529; /* Text color on hover */
+}
+		
 /*=================================================
 ||				4. Our Service
 ==================================================*/
 #service.service {
     background: #e0cece !important; /* Darker background */
-        /* Optional: Adjust text color */
 }
 
 .service-img img {
-    transition: transform 0.4s ease-in-out;
+    transition: transform 0.6s ease-in-out;
 	border-radius: 10px;
-	
 }
 
 .service-img:hover img {
@@ -195,7 +151,6 @@ body
 } 
 .section-item-detail {
 	color: #302d2d;
-
 }
 
 .service ul {
@@ -213,49 +168,18 @@ body
     background-color: #e1dada;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .service-block:hover {
-    transform: scale(1.05);
-
-    transition: transform 0.5s, box-shadow 0.3s;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
 }
 
 
-
-
-
-/*=================================================
-||				5. Twitter Feed
-==================================================*/
-.day, .feed{
-	font-size: 15px;
-	font-weight: 200;
-}
-.feed{
-	font-style: italic;
-	margin: 30px 0px;
-}
-.options a{
-	color: #fff;
-	text-transform: uppercase;
-	font-size: 15px;
-	padding: 0px 20px;
-}
-.options a i{
-	padding-right: 10px;
-}
-.options a:hover{
-	text-decoration: none;
-}
-.item:hover{
-	cursor: w-resize;
-}
 /*=================================================
 ||				7. Portfolio
 ==================================================*/
-.porfolio{
-	background: #f9f9f9;
-}
+
 .portfolio-img{
 	position: relative;
 	overflow: hidden;
@@ -279,6 +203,9 @@ body
 .plus{
 	display: none;
 }
+.portfolio .section-title{
+	color: white;
+}
 .portfolio-img:hover .plus{
 	display: inline-block;
 	padding-top: 25%;
@@ -292,6 +219,7 @@ body
 .portfolio-item-name{
 	display: inline-block;
 	font-size: 15px;
+	color: white;
 }
 .port-heart, .portfolio-item-name small{
 	font-size: 13px;
@@ -303,23 +231,6 @@ body
 }
 
 
-/*=================================================
-||				8. Note
-==================================================*/
-.note{
-	color: #dadada;
-}
-.quote{
-	font-style: italic;
-	font-size: 16px;
-	font-weight: 200;
-	padding: 0px 145px;
-}
-.quoter{
-	font-size: 20px;
-	font-weight: 400;
-	margin-top: 20px;
-}
 
 /*=================================================
 ||				9. Fun Facts
@@ -332,10 +243,12 @@ body
 	text-align: center;
 	padding: 40px 0px;
 	font-size: 16px;
+	transition: transform 0.3s ease;
 }
 .number{
 	font-weight: 700;
 	font-size: 25px;
+	transition: color 0.3s ease;
 }
 .number-title{
 	text-transform: uppercase;
@@ -345,6 +258,13 @@ body
 .col-sm-6 .fun-box{
 	margin-bottom: 20px;
 }
+.fun-box:hover {
+    transform: scale(1.05);
+}
+.fun-box:hover .number {
+    color: #a629b4;
+}
+
 /*=================================================
 ||				10. Footer
 ==================================================*/
@@ -511,5 +431,71 @@ a .rss:hover{
 	.header-table{
 		max-height: 627px;
 	}
+}
+
+/* Add animation for fun facts section */
+.fun-box {
+    transition: transform 0.3s ease;
+}
+
+.fun-box:hover {
+    transform: scale(1.05);
+}
+
+.number {
+    transition: color 0.3s ease;
+}
+
+.fun-box:hover .number {
+    color: #a629b4;
+}
+
+/* Add smooth animation for header text */
+.animated-text {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Add hover effect for navigation links */
+.nav-link {
+    position: relative;
+    padding: 0.5rem 1rem;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Add smooth transition for social icons */
+.social-icon .icon {
+    transition: all 0.3s ease;
+}
+
+.social-icon .icon:hover {
+    transform: translateY(-3px);
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
